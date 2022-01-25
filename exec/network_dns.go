@@ -54,7 +54,7 @@ func NewDnsActionSpec() spec.ExpActionCommandSpec {
 			ActionExample: `
 # The domain name www.baidu.com is not accessible
 blade create network dns --domain www.baidu.com --ip 10.0.0.0`,
-			ActionPrograms:   []string{TcNetworkBin},
+			ActionPrograms:   []string{changeDnsBin},
 			ActionCategories: []string{category.SystemNetwork},
 		},
 	}
